@@ -51,15 +51,54 @@ button:hover{
     color: white;
     cursor: pointer;
 }
-.media (max-width: 700px){
-    .container{
+@media (max-width: 900px) {
+    .container {
         flex-direction: column;
         height: auto;
         width: 100%;
         align-items: center;
+        gap: 10px;
+        padding: 10px 0;
     }
-    .card{
-        margin-left: 0px;
+    .card {
+        margin-left: 0;
         margin-top: 20px;
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+    }
+    img {
+        height: 200px;
+    }
+    .content {
+        position: static;
+        height: auto;
+        border-radius: 10px;
+        top: unset;
+        left: unset;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 5px 0;
+        gap: 5px;
+    }
+    .card {
+        width: 98vw;
+        max-width: 99vw;
+        border-radius: 6%;
+    }
+    img {
+        height: 120px;
+    }
+    .content {
+        padding: 5px;
+        font-size: 0.95em;
+    }
+    button {
+        width: 100%;
+        min-width: 60px;
+        font-size: 1em;
     }
 }
